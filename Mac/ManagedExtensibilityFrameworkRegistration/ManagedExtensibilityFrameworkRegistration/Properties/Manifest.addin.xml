@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+    
+    
+  <Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+        
+    <CommandItem id="ManagedExtensibilityFrameworkRegistration.Commands.CompositionManagerUsageCommand"/>
+        
+  </Extension>
+    
+  <Extension path="/MonoDevelop/Ide/Commands">
+      <Command id="ManagedExtensibilityFrameworkRegistration.Commands.CompositionManagerUsageCommand" 
+               _label="MEF Sample"
+               defaultHandler="ManagedExtensibilityFrameworkRegistration.CompositionManagerUsageCommand" />
+  </Extension>
+    
+    
+  <!-- MEF Catalog Registration-->
+  <Extension path="/MonoDevelop/Ide/Composition">
+      <Assembly file="ManagedExtensibilityFrameworkRegistration.dll" />
+  </Extension>
+    
+</ExtensionModel>
